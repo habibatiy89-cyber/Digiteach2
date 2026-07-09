@@ -31,36 +31,57 @@ const DigiTeach = () => {
   ];
 
   return (
-    <div style={{ paddingBottom: '100px' }}>
-      {/* Hero Banner */}
-      <section style={{
-        backgroundColor: '#1A2B4C',
-        color: '#ffffff',
-        padding: '120px 0 80px',
-        textAlign: 'center',
-        position: 'relative',
-        overflow: 'hidden'
-      }}>
-        <div className="container" style={{ position: 'relative', zIndex: 2 }}>
-          <span className="badge-lime" style={{ marginBottom: '15px' }}>FLAGSHIP PROGRAMME</span>
-          <h1 style={{ fontSize: '3.5rem', fontWeight: 800, marginBottom: '20px', lineHeight: 1.2 }}>
-            DigiTeach Programme
-          </h1>
-          <p style={{ maxWidth: '800px', margin: '0 auto', fontSize: '1.25rem', color: 'rgba(255,255,255,0.85)', lineHeight: 1.8 }}>
-            Empowering educators to build practical digital skills, safe online navigation, and teaching confidence for modern classrooms.
-          </p>
+    <div className="w-full bg-white font-sans">
+      {/* DigiTeach Hero Banner */}
+      <div className="relative w-full aspect-[720/173] overflow-hidden flex-shrink-0">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: "url('/images/digiteach-hero.png')",
+          }}
+        />
+        <h1 className="sr-only">DigiTeach</h1>
+      </div>
+
+      {/* What is DigiTeach Section */}
+      <div className="container mx-auto px-6 py-16">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-16">
+          
+          {/* Left Column: Text */}
+          <div className="w-full md:max-w-[480px] text-left">
+            <div 
+              className="italic text-2xl mb-4" 
+              style={{ fontFamily: "'Caveat', cursive", color: '#84cc16' }}
+            >
+              No Question is too Basic!
+            </div>
+            
+            <h2 className="text-[32px] md:text-[36px] font-extrabold text-[#1A2B4C] mb-6 leading-tight">
+              What is DigiTeach?
+            </h2>
+
+            <h4 className="text-[16px] md:text-[18px] font-bold text-[#1A2B4C] mb-4 leading-relaxed">
+              A teacher digital confidence programme.
+            </h4>
+
+            <p className="text-[#475569] text-[14px] leading-relaxed font-medium">
+              It starts with teachers because educators are often the first enablers, knowledge carriers and practical problem-solvers in their communities.
+            </p>
+          </div>
+
+          {/* Right Column: Photo */}
+          <div className="w-full md:w-[350px] flex-shrink-0 flex justify-center">
+            <div className="w-full max-w-[350px] rounded-[24px] overflow-hidden shadow-[0_10px_35px_rgba(0,0,0,0.04)] border border-[#E2E8F0]">
+              <img 
+                src="/images/digiteach-man-laptop.png" 
+                alt="Teacher using laptop" 
+                className="w-full h-auto object-cover"
+              />
+            </div>
+          </div>
+
         </div>
-        <div style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0,
-          opacity: 0.1,
-          background: 'radial-gradient(circle, #2D8B84 10%, transparent 11%)',
-          backgroundSize: '20px 20px'
-        }} />
-      </section>
+      </div>
 
       {/* Curriculum Overview */}
       <section style={{ padding: '80px 0' }}>
