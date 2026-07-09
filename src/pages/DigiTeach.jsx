@@ -1,35 +1,6 @@
 import React from 'react';
-import { BookOpen, Shield, Globe, Award, HelpCircle } from 'lucide-react';
-import VolunteerForm from '../components/VolunteerForm';
 
 const DigiTeach = () => {
-  const curriculum = [
-    {
-      title: 'Digital Foundations',
-      icon: <BookOpen size={32} style={{ color: '#2D8B84' }} />,
-      desc: 'Understand computer anatomy, file naming systems, structured directories, shortcut commands, and typing accuracy fundamentals.',
-      topics: ['Hardware and operating systems', 'Saving and searching for files', 'Folders management', 'Keyboard shortcuts']
-    },
-    {
-      title: 'Internet, Email & Cloud',
-      icon: <Globe size={32} style={{ color: '#2D8B84' }} />,
-      desc: 'Master browsers, clean search queries, Google Drive structure, email attachments, uploads, and collaborative tools.',
-      topics: ['Google Workspace tools', 'Email communication best practices', 'Cloud storage and file sharing', 'Advanced search operators']
-    },
-    {
-      title: 'Teacher Productivity',
-      icon: <Award size={32} style={{ color: '#2D8B84' }} />,
-      desc: 'Create lesson plans, dynamic marksheets, tests, report templates, and slide presentations using Google Docs, Sheets, and Slides.',
-      topics: ['Sheets formulas for gradebooks', 'Professional presentation design', 'Lesson note templates in Docs', 'Digital scheduling']
-    },
-    {
-      title: 'Digital Safety & Hygiene',
-      icon: <Shield size={32} style={{ color: '#2D8B84' }} />,
-      desc: 'Prevent cyber fraud, scam links, phishing, and protect students. Understand password managers and digital footprint settings.',
-      topics: ['Phishing detection methods', 'Mobile money scam prevention', 'Student data protection', 'Secure accounts configuration']
-    }
-  ];
-
   return (
     <div className="w-full bg-white font-sans">
       {/* DigiTeach Hero Banner */}
@@ -84,100 +55,174 @@ const DigiTeach = () => {
       </div>
 
       {/* Curriculum Overview */}
-      <section style={{ padding: '80px 0' }}>
-        <div className="container">
-          <div style={{ textAlign: 'center', marginBottom: '60px' }}>
-            <h2 style={{ fontSize: '2.5rem', color: '#1A2B4C', fontWeight: 700 }}>Curriculum & Focus Areas</h2>
-            <p style={{ color: '#475569', maxWidth: '650px', margin: '15px auto 0', fontSize: '1.1rem' }}>
-              Designed explicitly for teachers, this curriculum covers basic tasks that simplify administrative work and elevate daily classroom learning.
+      <div className="w-full flex flex-col lg:flex-row items-stretch justify-center overflow-hidden">
+        
+        {/* Left Column: List on Paper Texture */}
+        <div 
+          className="w-full lg:w-1/2 px-8 py-16 md:px-16 md:py-20 flex flex-col justify-center text-left"
+          style={{ 
+            backgroundImage: "url('/images/paper-bg.png')", 
+            backgroundSize: 'cover',
+            backgroundPosition: 'center'
+          }}
+        >
+          {/* Tagline */}
+          <div className="flex items-center mb-3">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#84cc16" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="mr-2">
+              <polyline points="9 11 12 14 22 4" />
+              <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
+            </svg>
+            <span 
+              className="italic text-2xl" 
+              style={{ fontFamily: "'Caveat', cursive", color: '#84cc16' }}
+            >
+              The Curriculum
+            </span>
+          </div>
+
+          {/* Heading */}
+          <h2 className="text-[32px] md:text-[36px] font-extrabold text-[#1A2B4C] mb-8 leading-tight">
+            Four Core Learning Areas
+          </h2>
+
+          {/* List Cards */}
+          <div className="flex flex-col gap-4 max-w-[500px]">
+            
+            {/* Area 1 */}
+            <div className="bg-white p-5 rounded-2xl border border-slate-100 shadow-[0_4px_20px_rgba(0,0,0,0.02)] flex gap-4">
+              <span className="text-[28px] font-extrabold text-[#2D8B84] leading-none mt-0.5">1</span>
+              <div>
+                <h4 className="text-[16px] font-bold text-[#1A2B4C] mb-1">Digital Foundations</h4>
+                <p className="text-[13px] text-[#475569] leading-relaxed font-medium">
+                  Computer basics, mouse and keyboard use, typing practice, files, folders, naming, saving, opening, closing, and finding documents.
+                </p>
+              </div>
+            </div>
+
+            {/* Area 2 */}
+            <div className="bg-white p-5 rounded-2xl border border-slate-100 shadow-[0_4px_20px_rgba(0,0,0,0.02)] flex gap-4">
+              <span className="text-[28px] font-extrabold text-[#EF4444] leading-none mt-0.5">2</span>
+              <div>
+                <h4 className="text-[16px] font-bold text-[#1A2B4C] mb-1">Internet, Email and Cloud Confidence</h4>
+                <p className="text-[13px] text-[#475569] leading-relaxed font-medium">
+                  Browsers, online search, Gmail, passwords, attachments, downloads, uploads, and Google Drive.
+                </p>
+              </div>
+            </div>
+
+            {/* Area 3 */}
+            <div className="bg-white p-5 rounded-2xl border border-slate-100 shadow-[0_4px_20px_rgba(0,0,0,0.02)] flex gap-4">
+              <span className="text-[28px] font-extrabold text-[#F59E0B] leading-none mt-0.5">3</span>
+              <div>
+                <h4 className="text-[16px] font-bold text-[#1A2B4C] mb-1">Teacher Productivity</h4>
+                <p className="text-[13px] text-[#475569] leading-relaxed font-medium">
+                  Google Docs for letters, tests, reports, and lesson notes; Google Sheets for marks and attendance; Google Slides for presentations.
+                </p>
+              </div>
+            </div>
+
+            {/* Area 4 */}
+            <div className="bg-white p-5 rounded-2xl border border-slate-100 shadow-[0_4px_20px_rgba(0,0,0,0.02)] flex gap-4">
+              <span className="text-[28px] font-extrabold text-[#3B82F6] leading-none mt-0.5">4</span>
+              <div>
+                <h4 className="text-[16px] font-bold text-[#1A2B4C] mb-1">Digital Safety</h4>
+                <p className="text-[13px] text-[#475569] leading-relaxed font-medium">
+                  Scams, phishing, mobile money fraud, fake links, AI-generated misinformation, password hygiene, and safer online behaviour.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        {/* Right Column: Teal Graphic Panel */}
+        <div className="w-full lg:w-1/2 flex-shrink-0 flex items-stretch">
+          <img 
+            src="/images/curriculum-right.png" 
+            alt="Curriculum visual presentation" 
+            className="w-full h-auto lg:h-full object-cover"
+          />
+        </div>
+
+      </div>
+
+      {/* Cards Info Section */}
+      <div className="max-w-6xl mx-auto px-6 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Card 1 */}
+          <div className="bg-white rounded-[24px] p-8 shadow-[0_10px_35px_rgba(0,0,0,0.02)] border-2 border-dashed border-sky-100 flex flex-col text-left">
+            <h4 className="text-[18px] font-extrabold text-[#2563EB] mb-4">Who It's For</h4>
+            <p className="text-[#475569] text-[14px] leading-relaxed font-medium">
+              Teachers and educators who want to use everyday technology more confidently — whatever their current level.
             </p>
           </div>
 
-          <div className="grid-2">
-            {curriculum.map((item, idx) => (
-              <div key={idx} className="card-hover" style={{ display: 'flex', gap: '20px', alignItems: 'flex-start' }}>
-                <div style={{
-                  padding: '16px',
-                  backgroundColor: 'rgba(45, 139, 132, 0.1)',
-                  borderRadius: '16px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center'
-                }}>
-                  {item.icon}
-                </div>
-                <div>
-                  <h3 style={{ fontSize: '1.4rem', color: '#1A2B4C', marginBottom: '10px', fontWeight: 700 }}>{item.title}</h3>
-                  <p style={{ color: '#475569', fontSize: '0.98rem', marginBottom: '15px', lineHeight: 1.7 }}>{item.desc}</p>
-                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
-                    {item.topics.map((t, index) => (
-                      <span key={index} style={{
-                        fontSize: '0.8rem',
-                        padding: '4px 10px',
-                        backgroundColor: '#FCF9F3',
-                        color: '#2D8B84',
-                        border: '1px solid rgba(45,139,132,0.15)',
-                        borderRadius: '99px',
-                        fontWeight: 600
-                      }}>{t}</span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            ))}
+          {/* Card 2 */}
+          <div className="bg-white rounded-[24px] p-8 shadow-[0_10px_35px_rgba(0,0,0,0.02)] border-2 border-dashed border-violet-100 flex flex-col text-left">
+            <h4 className="text-[18px] font-extrabold text-[#7C3AED] mb-4">How it's Delivered</h4>
+            <p className="text-[#475569] text-[14px] leading-relaxed font-medium">
+              Hands-on, community-led sessions. Learn by doing, practise with support, build confidence step by step.
+            </p>
+          </div>
+
+          {/* Card 3 */}
+          <div className="bg-white rounded-[24px] p-8 shadow-[0_10px_35px_rgba(0,0,0,0.02)] border-2 border-dashed border-rose-100 flex flex-col text-left">
+            <h4 className="text-[18px] font-extrabold text-[#EF4444] mb-4">The Approach</h4>
+            <p className="text-[#475569] text-[14px] leading-relaxed font-medium">
+              Adult learning, inquiry-based practice and peer support — applied to real classroom and life tasks.
+            </p>
           </div>
         </div>
-      </section>
+      </div>
 
-      {/* Program Path & Registration */}
-      <section style={{ padding: '80px 0', backgroundColor: '#ffffff' }}>
-        <div className="container">
-          <div className="grid-2" style={{ alignItems: 'center', gap: '60px' }}>
+      {/* Current Pilot Section */}
+      <div className="max-w-6xl mx-auto px-6 pb-24">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 rounded-[24px] overflow-hidden shadow-[0_10px_35px_rgba(0,0,0,0.03)]">
+          {/* Left Column: Black & White Photo */}
+          <div className="relative h-64 md:h-auto min-h-[320px]">
+            <img 
+              src="/images/current-pilot.png"
+              alt="Current Pilot children in Nakuru"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+          </div>
+
+          {/* Right Column: Teal Box */}
+          <div className="bg-[#2D8B84] p-8 md:p-16 flex flex-col justify-center text-left text-white">
+            {/* Tagline: Current Pilot */}
+            <div 
+              className="flex items-center gap-2 text-lime italic text-2xl mb-4" 
+              style={{ fontFamily: "'Caveat', cursive" }}
+            >
+              {/* Paper Plane SVG */}
+              <svg className="w-6 h-6 text-lime stroke-[2]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+              </svg>
+              Current Pilot
+            </div>
+
+            {/* Heading */}
+            <h3 className="text-3xl md:text-[36px] font-extrabold text-white leading-[1.2] mb-6">
+              The <span className="text-lime">first cohort</span> is being prepared in Nakuru / Bahati
+            </h3>
+
+            {/* Description */}
+            <p className="text-white/90 text-[15px] leading-relaxed mb-8 font-medium">
+              Pilot planning is underway for a first teacher digital confidence cohort, with timing under review for 2026. We're currently seeking host schools, teachers, volunteers and partners.
+            </p>
+
+            {/* Button */}
             <div>
-              <h2 style={{ fontSize: '2.25rem', color: '#1A2B4C', fontWeight: 700, marginBottom: '20px' }}>
-                Bring DigiTeach to Your School
-              </h2>
-              <p style={{ color: '#475569', marginBottom: '20px', lineHeight: 1.8 }}>
-                The DigiTeach pilot operates through cohort packages. We pair local schools containing dedicated computer labs or network facilities with our trained Digital Fellows who deliver the training locally.
-              </p>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '15px', marginBottom: '30px' }}>
-                <div style={{ display: 'flex', gap: '15px' }}>
-                  <div style={{ fontWeight: 800, color: '#2D8B84', fontSize: '1.25rem' }}>01</div>
-                  <div>
-                    <h4 style={{ color: '#1A2B4C', fontWeight: 700 }}>Cohort Selection</h4>
-                    <p style={{ fontSize: '0.9rem', color: '#475569' }}>We select schools expressing structural readiness and internet capability.</p>
-                  </div>
-                </div>
-                <div style={{ display: 'flex', gap: '15px' }}>
-                  <div style={{ fontWeight: 800, color: '#2D8B84', fontSize: '1.25rem' }}>02</div>
-                  <div>
-                    <h4 style={{ color: '#1A2B4C', fontWeight: 700 }}>In-Person Training</h4>
-                    <p style={{ fontSize: '0.9rem', color: '#475569' }}>Fellows visit weekly, conducting hands-on tasks and feedback check-ins.</p>
-                  </div>
-                </div>
-                <div style={{ display: 'flex', gap: '15px' }}>
-                  <div style={{ fontWeight: 800, color: '#2D8B84', fontSize: '1.25rem' }}>03</div>
-                  <div>
-                    <h4 style={{ color: '#1A2B4C', fontWeight: 700 }}>Evaluation & Certification</h4>
-                    <p style={{ fontSize: '0.9rem', color: '#475569' }}>Practical tests certify digital autonomy in teacher productivity and security.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div style={{
-              backgroundColor: '#FCF9F3',
-              padding: '40px',
-              borderRadius: '28px',
-              border: '1px solid rgba(45, 139, 132, 0.1)',
-              boxShadow: 'var(--shadow-md)'
-            }}>
-              <h3 style={{ color: '#1A2B4C', fontWeight: 700, marginBottom: '20px', fontSize: '1.5rem' }}>Register Cohort / Partner Interest</h3>
-              <VolunteerForm />
+              <a 
+                href="/contact" 
+                className="inline-block border border-white/60 hover:border-white text-white rounded-full px-8 py-3.5 text-sm font-bold hover:bg-white hover:text-[#2D8B84] transition-all duration-300"
+              >
+                Express Your Interest
+              </a>
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </div>
   );
 };
