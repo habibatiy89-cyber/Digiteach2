@@ -4,14 +4,20 @@ import { Mail, Phone, MapPin } from 'lucide-react';
 
 const Contact = () => {
   return (
-    <div style={{ padding: '80px 0 100px' }}>
-      <div className="container">
-        <div style={{ textAlign: 'center', marginBottom: '60px' }}>
-          <h1 style={{ fontSize: '2.75rem', color: '#1A2B4C', fontWeight: 800 }}>Contact Us</h1>
-          <p style={{ color: '#475569', maxWidth: '600px', margin: '15px auto 0' }}>
-            Have questions about bringing our cohorts to your school or joining as a volunteer? Reach out today.
-          </p>
-        </div>
+    <div className="w-full bg-white font-sans">
+      {/* Contact Hero Banner */}
+      <div className="relative w-full aspect-[720/172] overflow-hidden flex-shrink-0">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: "url('/images/contact-hero.png')",
+          }}
+        />
+        <h1 className="sr-only">Contact Us</h1>
+      </div>
+
+      <div style={{ padding: '80px 0 100px' }}>
+        <div className="container">
 
         <div className="grid-2" style={{ gap: '60px', alignItems: 'center' }}>
           <div>
@@ -56,6 +62,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };
