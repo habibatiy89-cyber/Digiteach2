@@ -3,6 +3,7 @@ import Hero from '../components/Hero';
 import ProgramSection from '../components/ProgramSection';
 import About from '../components/AboutContent';
 import LearningAreas from '../components/LearningAreas';
+import WhyThisMatters from '../components/WhyThisMatters';
 import Impact from '../components/Impact';
 import GetInvolved from '../components/GetInvolved';
 import Testimonials from '../components/Testimonials';
@@ -14,8 +15,9 @@ const Home = () => {
     <>
       <Hero />
       <ProgramSection />
-      <About />
+      <About isHomePage={true} />
       <LearningAreas />
+      <WhyThisMatters />
       <Impact />
       <GetInvolved />
       <Testimonials />
