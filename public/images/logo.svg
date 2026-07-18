@@ -1,45 +1,37 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 150" role="img" aria-labelledby="logo-title">
-  <title id="logo-title">DIGITEACH Logo</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" role="img" aria-labelledby="logo-title">
+  <title id="logo-title">Digital Confidence Initiative Logo</title>
   
   <!-- LOGO ICON MARK -->
   <g transform="translate(10, 0)">
-    <!-- Lower Network/Node Globe Base -->
-    <circle cx="90" cy="115" r="2" fill="#1A2B4C" />
-    <circle cx="65" cy="125" r="3" fill="#3D8B7A" />
-    <circle cx="115" cy="125" r="3" fill="#3D8B7A" />
-    <circle cx="45" cy="105" r="2.5" fill="#1A2B4C" />
-    <circle cx="135" cy="105" r="2.5" fill="#1A2B4C" />
-    <path d="M 45 105 A 50 50 0 0 0 135 105" fill="none" stroke="#1A2B4C" stroke-width="1.5" stroke-dasharray="3,3" />
-    <path d="M 65 125 Q 90 100 115 125" fill="none" stroke="#3D8B7A" stroke-width="1" />
-    <path d="M 45 105 L 65 125 L 90 115 L 115 125 L 135 105" fill="none" stroke="#1A2B4C" stroke-width="0.75" />
-    <path d="M 90 115 L 90 90" fill="none" stroke="#1A2B4C" stroke-width="1.5" />
-
-    <!-- Open Book Base -->
-    <path d="M 90 95 Q 65 75 30 85 L 30 55 Q 65 45 90 65 Z" fill="none" stroke="#1A2B4C" stroke-width="4.5" stroke-linejoin="round" />
-    <path d="M 90 95 Q 115 75 150 85 L 150 55 Q 115 45 90 65 Z" fill="none" stroke="#1A2B4C" stroke-width="4.5" stroke-linejoin="round" />
-    <path d="M 35 62 L 35 80" stroke="#1A2B4C" stroke-width="2" />
-    <path d="M 145 62 L 145 80" stroke="#1A2B4C" stroke-width="2" />
-
-    <!-- Growing Green Leaves -->
-    <path d="M 90 85 C 70 75 55 50 65 35 C 80 45 85 65 90 85 Z" fill="#4AA785" />
-    <path d="M 90 85 C 110 75 125 50 115 35 C 100 45 95 65 90 85 Z" fill="#3D8B7A" />
-    <path d="M 90 85 Q 75 55 65 35" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" />
-    <path d="M 90 85 Q 105 55 115 35" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" />
-
-    <!-- Lightbulb & Radiating Thoughts -->
-    <path d="M 80 32 C 70 32 68 15 90 15 C 112 15 110 32 100 32 L 97 40 L 83 40 Z" fill="none" stroke="#3D8B7A" stroke-width="3" stroke-linejoin="round" />
-    <path d="M 86 44 L 94 44 M 88 48 L 92 48" stroke="#1A2B4C" stroke-width="3" stroke-linecap="round" />
-    <!-- Digital Filaments -->
-    <circle cx="90" cy="24" r="2" fill="#1A2B4C" />
-    <path d="M 83 28 L 90 24 L 97 28" fill="none" stroke="#1A2B4C" stroke-width="1.5" />
-    <!-- Light Rays -->
-    <path d="M 90 7 L 90 11 M 73 11 L 76 14 M 107 11 L 104 14 M 66 22 L 70 23 M 114 22 L 110 23" stroke="#3D8B7A" stroke-width="2" stroke-linecap="round" />
-
-    <!-- Outer Boundary Arch -->
-    <path d="M 40 70 A 58 58 0 1 1 140 70" fill="none" stroke="#3D8B7A" stroke-width="2.5" stroke-dasharray="180 20 10 20" stroke-linecap="round" />
+    <!-- White background shield/circle -->
+    <circle cx="75" cy="75" r="60" fill="#FFFFFF" />
+    
+    <!-- Outer Shield/Ring Outline (styled like the screenshot: a blue/teal ring with bottom path) -->
+    <path d="M 75 135 C 108 135, 135 108, 135 75 C 135 42, 108 15, 75 15 C 42 15, 15 42, 15 75" fill="none" stroke="#1A2B4C" stroke-width="6" stroke-linecap="round" />
+    
+    <!-- Green road path at the bottom curving in -->
+    <path d="M 15 75 C 15 108, 42 135, 75 135 C 90 135, 102 120, 110 100 C 115 90, 118 75, 118 75" fill="none" stroke="#2D8B84" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+    
+    <!-- Stylized Figures (Three People: Green, Orange, Teal/Blue) -->
+    <!-- Left person (Green) -->
+    <circle cx="50" cy="80" r="10" fill="#84CC16" />
+    <path d="M 50 90 C 38 90, 38 115, 50 115 C 56 115, 62 108, 62 98 Z" fill="#84CC16" />
+    
+    <!-- Right person (Teal/Blue) -->
+    <circle cx="100" cy="80" r="10" fill="#06B6D4" />
+    <path d="M 100 90 C 112 90, 112 115, 100 115 C 94 115, 88 108, 88 98 Z" fill="#06B6D4" />
+    
+    <!-- Center/Top person (Orange/Yellow - taller/foreground) -->
+    <circle cx="75" cy="60" r="12" fill="#F59E0B" />
+    <path d="M 75 72 C 60 72, 60 110, 75 110 C 90 110, 90 72, 75 72 Z" fill="#F59E0B" />
+    
   </g>
 
   <!-- TYPOGRAPHY TEXT -->
-  <text x="185" y="92" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="62" font-weight="700" fill="#3D8B7A" letter-spacing="1">DIGI</text>
-  <text x="322" y="92" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="62" font-weight="800" fill="#1A2B4C" letter-spacing="1">TEACH</text>
+  <g transform="translate(170, 0)">
+    <text x="0" y="42" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="900" fill="#1A2B4C" letter-spacing="1.5">DIGITAL</text>
+    <text x="0" y="78" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="900" fill="#1A2B4C" letter-spacing="1.5">CONFIDENCE</text>
+    <text x="0" y="114" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="900" fill="#2D8B84" letter-spacing="1.5">INITIATIVE</text>
+    <text x="0" y="132" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#475569" letter-spacing="0.5">From access to confidence, together.</text>
+  </g>
 </svg>

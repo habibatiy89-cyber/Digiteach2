@@ -43,7 +43,7 @@ const Hero = () => {
             {/* Title */}
             <h1 className="text-[42px] md:text-[52px] lg:text-[56px] font-extrabold leading-[1.1] mb-6">
               Turning <br />
-              Digital <span className="line-through decoration-[#EF4444] decoration-[3px] md:decoration-4 opacity-50">Access</span> <br />
+              Digital <span className="opacity-40">Access</span> <br />
               into Digital <span className="relative inline-block mt-1 italic text-[#84cc16]" style={{ fontFamily: "'Caveat', cursive" }}>
                 Confidence
                 {/* Custom curved brush stroke SVG underline */}
@@ -62,13 +62,13 @@ const Hero = () => {
             <div className="flex flex-wrap gap-4">
               <Link 
                 to="/digiteach" 
-                className="bg-[#2E3C56] text-white hover:bg-[#3d4d6c] px-8 py-3.5 rounded-full text-[15px] font-bold inline-flex items-center gap-2 transition-colors border border-transparent"
+                className="bg-[#2E3C56]/40 hover:bg-[#2E3C56]/80 text-white px-8 py-3.5 rounded-full text-[15px] font-bold inline-flex items-center gap-2 transition-all border border-white/20 shadow-[0_4px_12px_rgba(0,0,0,0.05)]"
               >
                 Explore DigiTeach <ArrowRight size={18} />
               </Link>
               <Link 
                 to="/volunteer" 
-                className="bg-[#2D8B84] text-white hover:bg-[#236e68] px-8 py-3.5 rounded-full text-[15px] font-bold inline-flex items-center gap-2 transition-colors border border-transparent"
+                className="bg-[#2D8B84] hover:bg-[#236e68] text-white px-8 py-3.5 rounded-full text-[15px] font-bold inline-flex items-center gap-2 transition-all border border-transparent shadow-[0_4px_12px_rgba(45,139,132,0.15)]"
               >
                 Get Involved <ArrowRight size={18} />
               </Link>
@@ -99,7 +99,10 @@ const Hero = () => {
               </div>
 
               {/* Image 3: Bottom */}
-              <div className="absolute left-[2%] bottom-0 w-[96%] h-[40%] rounded-[24px] overflow-hidden shadow-[0_15px_40px_rgba(0,0,0,0.15)] border-4 border-[#1A2B4C]">
+              <div 
+                className="absolute left-[2%] bottom-0 w-[96%] h-[40%] rounded-[24px] overflow-hidden shadow-[0_15px_40px_rgba(0,0,0,0.15)] border-4 border-[#1A2B4C]"
+                style={{ transform: 'rotate(1.5deg)' }}
+              >
                 <img 
                   src="/images/home-bg-Bottom.png" 
                   alt="Group discussion" 
